@@ -5,6 +5,7 @@ import { ProgamAcaraRouter } from './progam-acara.routes'
 import { GaleriImageRouter } from './galeri.routes'
 import { KabarBeritaRouter } from './kabar-berita.routes'
 import { JadwalAcaraRouter } from './jadwal.routes'
+import { CountRouter } from './count.routes'
 
 const _routes: Array<[string, Router]> = [
   ['/v1/api/', HealthRouter],
@@ -12,7 +13,8 @@ const _routes: Array<[string, Router]> = [
   ['/v1/api/progam-acara', ProgamAcaraRouter],
   ['/v1/api/galeri-image', GaleriImageRouter],
   ['/v1/api/kabar-berita', KabarBeritaRouter],
-  ['/v1/api/jadwal-acara', JadwalAcaraRouter]
+  ['/v1/api/jadwal-acara', JadwalAcaraRouter],
+  ['/v1/api/count', CountRouter]
 ]
 
 export const routes = (app: Application) => {
